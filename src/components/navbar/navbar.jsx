@@ -31,22 +31,21 @@ const Navbar = () => {
                         <li className="nav-item">
                             <Link className="nav-link " aria-current="page" to="/">About Us</Link>
                         </li>
-                        {token ? (
+                        
                             <>
-                                {userRole === 'admin' && (
                                     <li className="nav-item">
                                         <Link className="nav-link" to="/admin">
                                             Admin
                                         </Link>
                                     </li>
-                                )}
-                                {userRole === 'employee' && (
+                                
+                               
                                     <li className="nav-item">
                                         <Link className="nav-link" to="/employee">
                                             Employee
                                         </Link>
                                     </li>
-                                )}
+                                
                                 <li className="nav-item">
                                     <button className="nav-link btn btn-link" onClick={handleLogout}>
                                         Logout
@@ -59,7 +58,7 @@ const Navbar = () => {
                                     Login
                                 </Link>
                             </li>
-                        )}
+                        )
                     </ul>
                 </div>
             </div>
@@ -68,3 +67,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
