@@ -1,0 +1,43 @@
+/* admin.css */
+
+.admin__container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.create__container,
+.read__container {
+    flex: 1;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.create__container {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.read__container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para pantallas más pequeñas (ajusta según sea necesario) */
+@media (max-width: 768px) {
+    .admin__container {
+        flex-direction: column;
+        /* Cambia a diseño de columna en pantallas más pequeñas */
+    }
+
+    .create__container,
+    .read__container {
+        margin-right: 0;
+        /* Elimina el margen derecho en pantallas más pequeñas */
+    }
+}

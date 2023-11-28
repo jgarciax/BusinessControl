@@ -1,0 +1,121 @@
+/* readUser.css */
+
+.readUser__container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Dancing Script', cursive;
+    max-height: 600px;
+}
+
+/* Estilos para la barra de desplazamiento */
+.readUser__container::-webkit-scrollbar {
+    width: 12px;
+}
+
+
+
+.readUser__container::-webkit-scrollbar-thumb {
+    background-color: #007BFF;
+    border-radius: 6px;
+}
+
+.readUser__container::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+
+.readUser__container h2 {
+    margin-bottom: 0;
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.read__container li {
+    list-style: none;
+}
+
+.user-info {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.border {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.user-info div {
+    margin-bottom: 10px;
+}
+
+.readUser__container button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.readUser__container button:hover {
+    background-color: #0056b3;
+}
+
+.readUser__container button.delete {
+    background-color: #DC3545;
+}
+
+.readUser__container button.delete:hover {
+    background-color: #ba2d3e;
+}
+
+.readUser__container button {
+    margin-top: 50px;
+    height: 40px;
+    width: 80px;
+    border-radius: 50px;
+}
+
+.readUser__container a {
+    font-size: 18px;
+    color: #3f3642;
+    text-decoration: none;
+    cursor: pointer;
+    padding-right: 10px;
+    transition: transform 0.3s;
+}
+
+.readUser__container a:hover {
+    transform: scale(1.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .readUser__container h2 {
+        font-size: 36px;
+    }
+
+    .readUser__container .buttons_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .readUser__container button {
+        margin-top: 5px;
+        height: 40px;
+        width: 100px;
+        border-radius: 50px;
+    }
+
+}

@@ -1,0 +1,75 @@
+/* readProduct.css */
+
+.employee-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+    margin-right: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    /* Añadido para espacio entre filas */
+}
+
+.employee-container h2 {
+    color: #333;
+}
+
+.employee-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product_container,
+.activity-container {
+    height: auto;
+}
+
+.employee-container li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    height: 150px;
+    margin: 10px;
+}
+
+.product-info,
+.activity-info {
+    height: auto;
+    font-size: 16px;
+}
+
+.error-message {
+    color: red;
+}
+
+.employee-container small {
+    font-size: 15px;
+    color: #525252;
+    font-weight: 100;
+}
+
+/* Media query para hacer el diseño responsive en dispositivos más pequeños */
+@media (max-width: 600px) {
+    .col {
+        flex: 100%;
+        /* Cambiado a ocupar todo el ancho en dispositivos pequeños */
+        margin-right: 0;
+        /* Sin margen derecho en dispositivos pequeños */
+    }
+
+    .employee-container li {
+        height: auto;
+        /* Ajuste de altura automática en dispositivos pequeños */
+        margin: 10px 0;
+        /* Ajuste de margen en dispositivos pequeños */
+    }
+}

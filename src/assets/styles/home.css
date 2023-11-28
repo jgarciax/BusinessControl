@@ -1,0 +1,87 @@
+/* assets/styles/home.css */
+
+.jumbotron {
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.home__container {
+    font-family: 'Dancing Script', cursive;
+}
+
+.display-4 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #343a40;
+    text-align: center;
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.btn-primary {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #343a40;
+}
+
+.btn-primary:hover {
+    background-color: #ffca2c;
+    border-color: #ffca2c;
+    color: #343a40;
+}
+
+.title-container {
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: auto;
+    padding: 5px;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .title-container {
+        flex-direction: column-reverse;
+        /* Cambia la dirección en pantallas pequeñas */
+    }
+
+    .title-container .col-md-6 {
+        margin-bottom: 20px;
+    }
+
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+
+    .jumbotron {
+        padding: 1rem;
+    }
+
+    .card img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .card {
+        margin-top: 10px;
+    }
+}
